@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout" type="id" />
+    <item name="light" type="id" />
+    <item name="irEm" type="id" />
+    <item name="lSens" type="id" />
+    <item name="irStream" type="id" />
+    <item name="emitButton" type="id" />
+    <item name="rButton" type="id" />
+</resources>

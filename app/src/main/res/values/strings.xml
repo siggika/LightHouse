@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LightHouse</string>
+    <string name="action_settings">Settings</string>
+    <string name="lightsens_present">lightsens:</string>
+    <string name="ir_present">iremitter:</string>
+    <string name="luxVal">LUX:</string>
+    <string name="readIRsignal">DISPLAY CODE</string>
+    <string name="sendIRbtn">SEND IR CODE</string>
+    <string name="switchOnLightSensor"> Light Sensor</string>
+
+</resources>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="is.spilados.lighthouse.app.MainActivity">
+
+    <TextView
+        android:id="@id/lSens"
+        android:text="@string/lightsens_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@id/irEm"
+        android:text="@string/ir_present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lSens"/>
+
+    <Switch
+        android:id="@+id/switchLight"
+        android:text="@string/switchOnLightSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/irEm"
+        android:onClick="lightSensorSwitch" />
+
+    <TextView
+        android:id="@id/light"
+        android:text="@string/luxVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchLight"/>
+
+    <Button
+        android:id="@id/rButton"
+        android:text="@string/readIRsignal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/light"
+        android:onClick="displayCode"/>
+
+    <Button
+        android:id="@id/emitButton"
+        android:text="@string/sendIRbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rButton"
+        android:onClick="emitIRsignal"/>
+
+    <TextView
+        android:id="@id/irStream"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emitButton"
+        android:textIsSelectable="true" />
+
+</RelativeLayout>
